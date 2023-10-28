@@ -1,0 +1,32 @@
+.container{
+    margin-top: 200px;
+}
+
+.accordionContainer{
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.question{
+    background-color: rgb(44, 43, 43);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer{
+    padding: 5px 10px;
+    background-color: rgb(44, 43, 43);
+    /* background-color: gray; */
+    color: white;
+}
+
+/* .question.active{
+    background-color: brown;
+} */

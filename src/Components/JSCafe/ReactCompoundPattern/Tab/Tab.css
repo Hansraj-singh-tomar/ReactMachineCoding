@@ -1,0 +1,29 @@
+.tab{
+    max-width: 700px;
+    margin: 0 auto;    
+}
+
+.headsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.item{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.contentContainer{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+
+.active{
+    background-color: brown;
+}
