@@ -52,3 +52,102 @@
 51. Performance optimization techniques explain
 52. Shallow and deep copy..explain how will you create it
 53. Various hooks syntax useParam, useReducer, useQuery, useContext and many more.
+
+
+// From linkdin
+
+𝐉𝐚𝐯𝐚𝐬𝐜𝐫𝐢𝐩𝐭 
+🍄 Promises ( polyfill of Promise all, race, allSettle )
+🍄 Currying with example
+🍄 String.prototype.repeat
+🍄 Implement the compose() and pipe() polyfill .
+🍄 Design patterns like singleton, factory patterns etc
+🍄 Implement the publisher-subscriber pattern in javascript
+🍄 Implement the map, filter, reduce, and for Each polyfill
+🍄 Implement the Function.bind, call, apply method on the Function Prototype
+🍄 Implement Async. parallel, Async.series which executes a set of async tasks parallel and in series
+🍄 Implement Retry API with n number of
+🍄 Prototype and prototype inheritance
+🍄 How rendering work in the browser
+🍄 Event delegation and event propagation in js
+🍄 Implement Memoization
+🍄 Progressive Web application
+🍄 Clone an Object
+🍄 Debouncing and Throttling
+🍄 Implement clearAllTimeout()
+🍄 Build a Promise from Scratch
+🍄 Event Target — addEventListener, removeEventListener, dispatchEvent
+🍄 Intersection Observe
+
+𝐃𝐒𝐀
+🍄 How does JS "this" works in different scenarios?
+🍄 Remove duplicate element in an array
+🍄 LRU Cache
+🍄 Validate string of parentheses
+🍄 3Sum/ 4sum problem
+🍄 Reverse linked list
+🍄 Letter Combinations of a Phone Number
+
+// 1.  How can we fetch API data without using useEffect hook?
+
+// first way - 
+const [fetchedData, setFetchedData] = useState(false)
+
+const someFetchFunc = asyunc (url) => {
+
+setFetchedData(!fetchedData)
+
+const res = await fetch(url)
+const data = await res.json()
+setMovieData(data)
+
+}
+
+!fetchedData && someFetchFunc();
+
+// second way
+import { useState } from "react";
+import { IN_THEATER, POSTER } from "../../../constant/movies";
+import { GlobalGet } from "../../../utilities/fetch";
+
+const Service = () => {
+  const [movieData, setMovieData] = useState({ data: null, poster: null });
+
+  const fetchMovieData = async () => {
+    try {
+      let movieRes = await GlobalGet({ url: `${IN_THEATER}` });
+      return movieRes;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchPoster = async () => {
+    try {
+      let posterRes = await GlobalGet({ url: `${POSTER}` });
+      return posterRes;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const fetchData = async () => {
+    setMovieData({
+      data: await fetchMovieData(),
+      poster: await fetchPoster(),
+    });
+  };
+
+  useState(() => { //<=here it is
+    fetchData();
+  }, []);
+  return {
+    movieData,
+  };
+};
+
+export default Service;
+
+Note -  useState(() => { // <-- Initializer function invoked once
+            fetchData();
+        }, []);
