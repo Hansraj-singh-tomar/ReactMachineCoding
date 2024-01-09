@@ -1,0 +1,55 @@
+1. Chess Dashboard
+2. Counter App
+3. Comment and Like
+4. OTP input Box
+5. Tic-tac-toe
+6. Typing speed
+7. C-shap-board
+8. crypto-Dashboard
+9. Modal component
+10. Nested Commenting
+11. Start Rating 
+12. live search filter
+13. BMI calculator
+14. Calender
+15. Countdown Timer
+16. Digital clock
+17. Loan calculator
+18. tip calculator
+19. calculator
+
+
+// ------------ React -----------------
+
+// ----- learners bucket
+1. Feature flag
+2. Infinite scroll
+3. custom switch case
+4. Race condition 
+
+// ------ chai or code
+5. Password Generator
+5. currency converter
+
+// -------- Akashingole
+6. Render Huge List
+7. Stop watch
+
+8. Design Accordion
+9. Design Carousel
+10. Lyrics App
+11. dice game (do some coding)
+12. file explorer system
+13. Radio btn problem
+14. Quiz App
+15. Range input 
+16. search bar for filter List
+17. star Rating
+18. Geo location and share api
+19. voice recorder
+20. Progress bar 
+21. Design navbar
+22. snake ladder board
+23. build connect four
+24. Typehead/autocomplete(frontend master)
+25. implement poll widget
