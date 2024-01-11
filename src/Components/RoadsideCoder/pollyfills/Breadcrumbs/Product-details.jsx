@@ -19,7 +19,7 @@ const Productdetails = () => {
     }, [])
 
     return (
-        <div className='w-10/12 mx-auto bg-amber-50 shadow-2xl rounded-lg  flex'>
+        <div className='w-10/12 mx-auto mt-6 py-6 bg-amber-50 shadow-2xl rounded-lg  flex'>
             {/* Product Image component */}
             <ProductImgCmp product={singleProduct} />
             {/* Product Detail component */}
