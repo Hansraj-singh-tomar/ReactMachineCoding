@@ -99,4 +99,42 @@ const CardCmp = styled.div`
 `;
 
 
+// App.jsx component 
+// import React, { useRef } from "react";
+// import Card from "./components/Card";
+// import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+
+// const App = () => {
+
+//   const BoxRef = useRef();
+
+//   function handleArrowRight() {
+//     let width = BoxRef.current.clientWidth;
+//     BoxRef.current.scrollLeft = BoxRef.current.scrollLeft + width;
+//   }
+
+//   function handleArrowLeft() {
+//     let width = BoxRef.current.clientWidth;
+//     BoxRef.current.scrollLeft = BoxRef.current.scrollLeft - width;
+//   }
+
+//   return (
+//     <div className='pb-6 w-full relative'>
+//       <h1 className='text-bold text-center text-2xl font-bold'>Carousel Component</h1>
+//       <div ref={BoxRef} className='flex w-screen border-2 overflow-x-hidden border-black transition ease-out duration-400 scroll-smooth'>
+//         {
+//           [...Array(10)].map((_, index) => <Card key={index} index={index} />)
+//         }
+//       </div>
+//       <div className='absolute top-0 h-full w-full flex justify-between items-center text-3xl'>
+//         <button onClick={handleArrowLeft} className='p-1 bg-gray-600 text-white h-10 rounded-full text-center'><IoIosArrowBack /></button>
+//         <button onClick={handleArrowRight} className='p-1 bg-gray-600 text-white h-10 rounded-full text-center'><IoIosArrowForward /></button>
+//       </div>
+//     </div>
+//   )
+// };
+// export default App;
+
+// Card.jsx component
+
     
