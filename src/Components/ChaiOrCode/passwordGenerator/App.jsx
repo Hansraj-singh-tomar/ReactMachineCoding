@@ -27,6 +27,7 @@ function App() {
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
     // passwordRef.current?.setSelectionRange(0, 49); // to select the entire text for that we are using this line
+    // document.execCommand('copy');
     window.navigator.clipboard.writeText(password);
     setBtnText("Copied");
   }, [password]);
