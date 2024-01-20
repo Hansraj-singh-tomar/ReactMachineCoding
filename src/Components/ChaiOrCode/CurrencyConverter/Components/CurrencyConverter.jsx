@@ -19,8 +19,8 @@ function CurrencyConverter() {
   }
 
   function swap() {
-    setFrom(to);
-    setTo(from);
+    setFrom("");
+    setTo("");
     setAmount(convertedAmount);
     setConvertedAmount(amount);
   }
