@@ -1,0 +1,36 @@
+1. Star Rating 
+-> [...Array(5)].map(rating > i ? starComp.)
+-> hasHalfStar = rating % 1 !== 0;
+
+2. Tic Tac Toe 
+-> state = useState(Array(9).fill(null)); than isXturn,setXturn
+-> winnerLogicArray of Array
+-> const [a,b,c] = logic
+-> copyState[index] = isXturn ? "X" : "O";
+
+3. Todo App 
+-> todo + date show a list of todo after clicking on button
+
+4. Design Carousel
+-> min-width to card component
+-> card parent div overflow-hidden scroll-smooth
+-> Parent div relative 
+-> Arrow Left and Right div must be absolute
+
+5. Desing Accordion 
+-> Implement lifting state up comcept
+-> Array of object, inside it must have question and Answer over to that data we can map
+-> 
+
+6. Password Generator 
+-> we have to create two checkbox, one for rang and one input box to show data
+-> to copy Password from input we will use useRef on that input field
+-> inside useEffect we will call our function which is passwordGenerator 
+-> Onclick of copy button we will call function which is copyPassword
+-> PasswordRef.current.select() and than window.navigator.clipboard.writeText(Password);
+-> Math.floor(Math.random() * charString.length+1);
+
+7. Currency Converter
+-> we will get data using an api, inside url we will have to add string of currenct Type like USD and INR and all.
+-> we will have to create total four state -> from, to, amount and convertedAmount
+-> 
