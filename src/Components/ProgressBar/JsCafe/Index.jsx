@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react'
 import ProgressBar from './ProgressBar'
 
-const totalMs = 15 * 1000;
+const totalMs = 10 * 1000;
 const interval = 1 * 1000;
-const totalCycles = totalMs / interval;
-const progressMade = (interval / totalMs) * 100;
+const totalCycles = totalMs / interval;  // 10
+const progressMade = (interval / totalMs) * 100; // 10
+
 const Index = () => {
     const [progress, setProgress] = useState(0);
 

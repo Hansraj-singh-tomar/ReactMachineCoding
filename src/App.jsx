@@ -7,6 +7,9 @@
 // import Quiz from "./Components/Quiz App/Quiz"
 
 
+// From CodingMSTR youtube channel
+// import ImageUpload from "./Components/FunctionalityWithImage/CodingMSTR/ImageUpload";
+
 // Designs
 // import Carousel from "./Components/Designs/DesignCarousel/Carousel"
 // import Accordion from './Components/Designs/DesignAccordion/Accordion'
@@ -33,7 +36,8 @@
 // From Roadside coder
 // import UseEffectPollyfill from "./Components/RoadsideCoder/pollyfills/UseEffectPollyfill";
 // import UseMemoPollyfill from "./Components/RoadsideCoder/pollyfills/UseMemoPollyfill";
-import Parent from "./Components/RoadsideCoder/pollyfills/Breadcrumbs/Parent";
+// import Parent from "./Components/RoadsideCoder/pollyfills/Breadcrumbs/Parent";
+// import Stepper from "./Components/RoadsideCoder/stepper/Stepper";
 
 // From Frontend Master
 
@@ -68,10 +72,14 @@ const App = () => {
       {/* From road side coder */}
       {/* <UseEffectPollyfill /> */}
       {/* <UseMemoPollyfill /> */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <Stepper /> */}
 
       {/* Todo App */}
       {/* <Todo /> */}
+
+      {/* CodingMSTR */}
+      {/* <ImageUpload /> */}
     </>
   );
 };
